@@ -1,0 +1,12 @@
+version: '2'
+services:
+    signbuilder-postgresql:
+        container_name: signbuilder-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/signBuilder/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=signBuilder
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
